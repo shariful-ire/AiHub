@@ -1,28 +1,22 @@
-import React from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import './App.css'
-import './index.css'
+import { toast, ToastContainer } from "react-toastify";
+import "./App.css";
+import "./index.css";
+import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 function App() {
-  
-
   return (
-
     <>
-  <div className='text-4xl text-red-600'>
-    As Salamu-Alaikum
-  </div>
-
-    <button className='btn btn-primary' 
-    onClick= { () => {toast.success("Wow!")}}
-
-    
-    > Toast Me</button>
+     <NavBar></NavBar>
+     <Banner></Banner>
 
 
-    <ToastContainer />
-  </>
-  )
+     <Footer></Footer>
+     
+      <ToastContainer />
+    </>
+  );
 }
 
-export default App
+export default App;
