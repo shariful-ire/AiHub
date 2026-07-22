@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "ChatGPT",
+    "description": "Conversational AI model developed by OpenAI.\nIdeal for text generation, coding, and brainstorming.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+    "status": "popular"
+  },
+  {
+    "id": 2,
+    "title": "Claude AI",
+    "description": "Next-generation AI assistant built by Anthropic.\nExcels at long-context reasoning and nuanced writing.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 3,
+    "title": "GitHub Copilot",
+    "description": "AI-powered pair programmer for developers.\nOffers real-time code completions inside your IDE.",
+    "price": 10,
+    "image": "https://github.githubassets.com/images/modules/site/copilot/copilot-logo.png",
+    "status": "mostwanted"
+  },
+  {
+    "id": 4,
+    "title": "Midjourney",
+    "description": "Generative AI service for high-quality imagery.\nProduces photorealistic and artistic visual renders.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png",
+    "status": "popular"
+  },
+  {
+    "id": 5,
+    "title": "Perplexity AI",
+    "description": "AI-driven search engine providing cited answers.\nCombines real-time web search with conversational AI.",
+    "price": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 6,
+    "title": "Hugging Face",
+    "description": "Platform for sharing machine learning models.\nHost to thousands of open-source AI datasets and tools.",
+    "price": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Hugging_Face_emoji.svg",
+    "status": "mostwanted"
+  },
+  {
+    "id": 7,
+    "title": "Grammarly",
+    "description": "AI communication assistant for writing.\nImproves grammar, clarity, tone, and vocabulary.",
+    "price": 12,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Grammarly_logo.svg",
+    "status": "popular"
+  },
+  {
+    "id": 8,
+    "title": "Notion AI",
+    "description": "Integrated workspace assistant for notes and docs.\nSummarizes notes, drafts content, and manages tasks.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 9,
+    "title": "Jasper AI",
+    "description": "AI copilot tailored for enterprise marketing.\nGenerates brand-aligned content and copy at scale.",
+    "price": 39,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jasper_AI_logo.svg",
+    "status": "mostwanted"
+  },
+  {
+    "id": 10,
+    "title": "Canva Magic Studio",
+    "description": "Suite of AI tools built directly into Canva.\nGenerates visuals, edits photos, and writes design copy.",
+    "price": 15,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg",
+    "status": "popular"
+  }
+]
