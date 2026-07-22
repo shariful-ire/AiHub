@@ -1,4 +1,4 @@
-### 📦 Installation Of React Toastify
+## 📦 Installation Of React Toastify
 ---
 ## (1st Step)
 bash
@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 ---
 ## Step 2: Add ToastContainer (Just Once)
 jsx
-function App() {
+function App () {
   return (
     <div>
       <h1>My App</h1>
@@ -40,17 +40,14 @@ function MyComponent() {
 
 ## 🎨 4 Types of Toast Messages
 jsx
-// 1. Success (Green)
+1. Success (Green)
 toast.success('Successfully done!');
 
-// 2. Error (Red)
+2. Error (Red)
 toast.error('Something went wrong!');
-
-// 3. Warning (Yellow)
+3. Warning (Yellow)
 toast.warning('Please check again!');
-
-// 4. Info (Blue)
+4. Info (Blue)
 toast.info('New update available!');
-
-// 5. Simple (Default)
+5. Simple (Default)
 toast('Hello there!');
