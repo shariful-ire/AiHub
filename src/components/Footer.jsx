@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="AI Hub Logo" className="h-10 w-auto" />
+              <img src="./src/assets/logo.png" alt="AI Hub Logo" className="h-10 w-auto" />
               <h2 className="text-3xl font-bold tracking-tighter text-white">
                 AI Hub
               </h2>
@@ -103,7 +103,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-          <div>© {new Date().getFullYear()} AI Hub. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} AI Hub. All rights reserved --- Md Shariful Islam</div>
 
           <div className="flex gap-6">
             <a href="#" className="hover:text-red-400 transition">
