@@ -1,16 +1,56 @@
-# React + Vite
+### 📦 Installation Of React Toastify
+---
+## (1st Step)
+bash
+npm install react-toastify
+📝 Step-by-Step Setup
+Step 1: Import in Your File
+jsx
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+---
+## Step 2: Add ToastContainer (Just Once)
+jsx
+function App() {
+  return (
+    <div>
+      <h1>My App</h1>
+      
+      {/* This is the container - add it once in your main file */}
+      <ToastContainer />
+    </div>
+  );
+}
+---
+## Step 3: Use toast() Anywhere
+jsx
+function MyComponent() {
+  const handleClick = () => {
+    toast.success('Button clicked! 🎉');
+  };
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  return (
+    <button onClick={handleClick}>
+      Click Me
+    </button>
+  );
+}
+---
 
-Currently, two official plugins are available:
+## 🎨 4 Types of Toast Messages
+jsx
+// 1. Success (Green)
+toast.success('Successfully done!');
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+// 2. Error (Red)
+toast.error('Something went wrong!');
 
-## React Compiler
+// 3. Warning (Yellow)
+toast.warning('Please check again!');
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+// 4. Info (Blue)
+toast.info('New update available!');
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+// 5. Simple (Default)
+toast('Hello there!');
