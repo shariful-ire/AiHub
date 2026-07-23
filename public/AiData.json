@@ -2,81 +2,89 @@
   {
     "id": 1,
     "title": "ChatGPT",
-    "description": "Conversational AI model developed by OpenAI.\nIdeal for text generation, coding, and brainstorming.",
+    "description": "The world's most popular AI assistant by OpenAI.\nVersatile for writing, coding, reasoning, and creative tasks.",
     "price": 20,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
     "status": "popular"
   },
   {
     "id": 2,
-    "title": "Claude AI",
-    "description": "Next-generation AI assistant built by Anthropic.\nExcels at long-context reasoning and nuanced writing.",
-    "price": 20,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg",
+    "title": "Grok",
+    "description": "Built by xAI with real-time knowledge from X.\nHelpful, witty, and maximally truth-seeking AI.",
+    "price": 30,
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/grok-icon.png",
     "status": "favourite"
   },
   {
     "id": 3,
-    "title": "GitHub Copilot",
-    "description": "AI-powered pair programmer for developers.\nOffers real-time code completions inside your IDE.",
-    "price": 10,
-    "image": "https://github.githubassets.com/images/modules/site/copilot/copilot-logo.png",
+    "title": "DeepSeek",
+    "description": "Powerful open-source focused AI from China.\nExcellent at coding, math, and cost-effective reasoning.",
+    "price": 0,
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/deepseek-logo-icon.png",
     "status": "mostwanted"
   },
   {
     "id": 4,
-    "title": "Midjourney",
-    "description": "Generative AI service for high-quality imagery.\nProduces photorealistic and artistic visual renders.",
-    "price": 10,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png",
+    "title": "Gemini",
+    "description": "Google's advanced multimodal AI.\nDeep integration with Google ecosystem and strong reasoning.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/1200px-Google_Gemini_logo.svg.png",
     "status": "popular"
   },
   {
     "id": 5,
-    "title": "Perplexity AI",
-    "description": "AI-driven search engine providing cited answers.\nCombines real-time web search with conversational AI.",
-    "price": 0,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg",
+    "title": "Claude",
+    "description": "Anthropic's thoughtful and safe AI model.\nBest for long-context writing, analysis, and coding.",
+    "price": 20,
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/067/941/712/small_2x/claude-ai-logo-rounded-hd-free-png.png",
     "status": "favourite"
   },
   {
     "id": 6,
-    "title": "Hugging Face",
-    "description": "Platform for sharing machine learning models.\nHost to thousands of open-source AI datasets and tools.",
+    "title": "Kimi",
+    "description": "Moonshot AI's fast and intelligent Chinese AI.\nExcellent long-context handling and creative capabilities.",
     "price": 0,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Hugging_Face_emoji.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Kimi-logo-2025.png",
     "status": "mostwanted"
   },
   {
     "id": 7,
-    "title": "Grammarly",
-    "description": "AI communication assistant for writing.\nImproves grammar, clarity, tone, and vocabulary.",
-    "price": 12,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Grammarly_logo.svg",
+    "title": "Perplexity",
+    "description": "AI-powered search engine with real-time web access.\nDelivers accurate answers with sources.",
+    "price": 20,
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png",
     "status": "popular"
   },
   {
     "id": 8,
-    "title": "Notion AI",
-    "description": "Integrated workspace assistant for notes and docs.\nSummarizes notes, drafts content, and manages tasks.",
-    "price": 10,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+    "title": "Mistral",
+    "description": "European AI company known for efficient models.\nStrong performance in coding and multilingual tasks.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mistral_AI_logo_%282025%E2%80%93%29.svg/1280px-Mistral_AI_logo_%282025%E2%80%93%29.svg.png",
     "status": "favourite"
   },
   {
     "id": 9,
-    "title": "Jasper AI",
-    "description": "AI copilot tailored for enterprise marketing.\nGenerates brand-aligned content and copy at scale.",
-    "price": 39,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jasper_AI_logo.svg",
-    "status": "mostwanted"
+    "title": "Meta AI",
+    "description": "Meta's powerful Llama-based AI assistant.\nIntegrated across WhatsApp, Instagram, and Facebook.",
+    "price": 0,
+    "image": "https://brandlogos.net/wp-content/uploads/2025/08/meta_ai-logo_brandlogos.net_xjwry.png",
+    "status": "popular"
   },
   {
     "id": 10,
-    "title": "Canva Magic Studio",
-    "description": "Suite of AI tools built directly into Canva.\nGenerates visuals, edits photos, and writes design copy.",
-    "price": 15,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg",
+    "title": "Qwen",
+    "description": "Alibaba's high-performing Chinese AI series.\nOutstanding in coding, math, and multilingual understanding.",
+    "price": 0,
+    "image": "https://img.alicdn.com/imgextra/i3/O1CN01zaxxvj1p4f0VrY17j_!!6000000005307-54-tps-180-180.apng",
+    "status": "mostwanted"
+  },
+  {
+    "id": 11,
+    "title": "Copilot",
+    "description": "Microsoft's AI assistant powered by GPT models.\nExcellent integration with Office 365 and Windows.",
+    "price": 20,
+    "image": "https://learningtech.uncg.edu/wp-content/uploads/2025/10/app-page-logo_copilot.png",
     "status": "popular"
   }
 ]
