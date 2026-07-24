@@ -38,6 +38,7 @@ function MyComponent() {
 }
 ---
 
+
 ## 🎨 4 Types of Toast Messages
 jsx
 1. Success (Green)
