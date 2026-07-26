@@ -1,5 +1,5 @@
 import { toast, ToastContainer } from "react-toastify";
-import { Suspense } from "react";
+import { Suspense, use } from "react";
 import "./App.css";
 import "./index.css";
 import NavBar from "./components/NavBar";
@@ -13,6 +13,10 @@ function App() {
 
     return res.json();
   };
+
+  const [cart,setCart]=useState("model");
+  
+
 
   const modelPromise = getModel();
 
