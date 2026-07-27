@@ -1,5 +1,5 @@
 import { toast, ToastContainer } from "react-toastify";
-import { Suspense, use } from "react";
+import { Suspense, use ,useState} from "react";
 import "./App.css";
 import "./index.css";
 import NavBar from "./components/NavBar";
@@ -15,7 +15,7 @@ function App() {
   };
 
   const [cart,setCart]=useState("model");
-  
+  const [handleCart,setHandleCart] = useState([]);
 
 
   const modelPromise = getModel();
