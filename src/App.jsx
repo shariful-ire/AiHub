@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Model from "./components/AiModel/Model";
 
+
 function App() {
   const getModel = async () => {
     const res = await fetch("./AiData.json");
@@ -14,8 +15,6 @@ function App() {
     return res.json();
   };
 
-  const [cart,setCart]=useState("model");
-  const [handleCart,setHandleCart] = useState([]);
 
 
   const modelPromise = getModel();
@@ -24,11 +23,16 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
+      <div className="flex mx-auto gap-2 justify-center "> 
+        <button className="btn btn-orange-300 p-4 rounded-full">Model</button>
+        <button className="btn btn-orange-300 p-4 rounded-full">Cart</button>
+      </div>
 
       <Suspense fallback={<h2>Loading...</h2>}>
         <Model modelPromise={modelPromise} />
       </Suspense>
       <Footer></Footer>
+     
 
       <ToastContainer />
     </>
