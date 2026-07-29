@@ -19,6 +19,8 @@ function App() {
 
   const modelPromise = getModel();
 
+  const [ModelCard, setModelCard] = useState("Model");
+
   return (
     <>
       <NavBar></NavBar>
