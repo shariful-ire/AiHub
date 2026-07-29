@@ -24,8 +24,8 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <div className="flex mx-auto gap-2 justify-center "> 
-        <button className="btn btn-orange-300 p-4 rounded-full">Model</button>
-        <button className="btn btn-orange-300 p-4 rounded-full">Cart</button>
+        <button className="btn btn-orange-300 p-4 rounded-full" onClick={}>Model</button>
+        <button className="btn btn-orange-300 p-4 rounded-full " onClick={}>Cart</button>
       </div>
 
       <Suspense fallback={<h2>Loading...</h2>}>
