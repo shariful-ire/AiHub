@@ -1,5 +1,5 @@
-import { toast, ToastContainer } from "react-toastify";
-import { Suspense, use ,useState} from "react";
+import { ToastContainer } from "react-toastify";
+import { Suspense, useState } from "react";
 import "./App.css";
 import "./index.css";
 import NavBar from "./components/NavBar";
@@ -11,30 +11,55 @@ import Model from "./components/AiModel/Model";
 function App() {
   const getModel = async () => {
     const res = await fetch("./AiData.json");
-
     return res.json();
   };
 
-
-
   const modelPromise = getModel();
 
-  const [ModelCard, setModelCard] = useState("Model");
+
+  const [modelCard, setModelCard] = useState("Model");
 
   return (
     <>
-      <NavBar></NavBar>
-      <Banner></Banner>
-      <div className="flex mx-auto gap-2 justify-center "> 
-        <button className="btn btn-orange-300 p-4 rounded-full" onClick={}>Model</button>
-        <button className="btn btn-orange-300 p-4 rounded-full " onClick={}>Cart</button>
+      <NavBar />
+      <Banner />
+
+      <div className="flex justify-center gap-3 my-8">
+        <button
+          onClick={() => setModelCard("Model")}
+          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+            modelCard === "Model"
+              ? "bg-orange-500 text-white"
+              : "bg-gray-200 text-black hover:bg-gray-300"
+          }`}
+        >
+          Model
+        </button>
+
+        <button
+          onClick={() => setModelCard("Cart")}
+          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+            modelCard === "Cart"
+              ? "bg-orange-500 text-white"
+              : "bg-gray-200 text-black hover:bg-gray-300"
+          }`}
+        >
+          Cart
+        </button>
       </div>
 
-      <Suspense fallback={<h2>Loading...</h2>}>
-        <Model modelPromise={modelPromise} />
-      </Suspense>
-      <Footer></Footer>
-     
+      {modelCard === "Model" ? (
+        <Suspense fallback={<h2 className="text-center">Loading...</h2>}>
+          <Model modelPromise={modelPromise} />
+        </Suspense>
+      ) : (
+        <div className="text-center py-20">
+          <h2 className="text-3xl font-bold">Selected Models</h2>
+
+        </div>
+      )}
+
+      <Footer />
 
       <ToastContainer />
     </>
