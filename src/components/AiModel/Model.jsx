@@ -1,29 +1,34 @@
 import { use } from "react";
 import ModelCard from "./ModelCard";
 
-const Model = ({ modelPromise }) => {
+const Model = ({ modelPromise, handleAddToCart }) => {
   const models = use(modelPromise);
-
-  console.log(models);
 
   return (
     <div className="mx-auto w-[80%]">
-      <div className="mx-auto items-center my-6">
-        <h1 className="  text-4xl  text-center font-bold ">
-          Chose Your AI Model
+
+      <div className="text-center my-8">
+        <h1 className="text-4xl font-bold">
+          Choose Your AI Model
         </h1>
-        <h1 className="  text-gray-300 text-center my-3">
-          One Subscription Gives You Access To All frointier AI Model
-        </h1>
+
+        <p className="text-gray-500 mt-3">
+          One subscription gives you access to all frontier AI models.
+        </p>
       </div>
 
-     <div className="grid grid-cols-3 gap-4">
-       { models.map(model=>
-            <div>
-                <ModelCard model={model} />
-            </div>
-        ) }
-     </div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+
+        {models.map((model) => (
+          <ModelCard
+            key={model.id}
+            model={model}
+            handleAddToCart={handleAddToCart}
+          />
+        ))}
+
+      </div>
+
     </div>
   );
 };

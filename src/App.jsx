@@ -1,12 +1,15 @@
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { Suspense, useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./App.css";
 import "./index.css";
+
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Model from "./components/AiModel/Model";
-
+import Cart from "./components/AiModel/Cart";
 
 function App() {
   const getModel = async () => {
@@ -16,8 +19,29 @@ function App() {
 
   const modelPromise = getModel();
 
-
   const [modelCard, setModelCard] = useState("Model");
+  const [cart, setCart] = useState([]);
+
+  // Add Model
+  const handleAddToCart = (model) => {
+    const exists = cart.find((item) => item.id === model.id);
+
+    if (exists) {
+      toast.warning("Model already selected!");
+      return;
+    }
+
+    setCart([...cart, model]);
+    toast.success("Model Added Successfully!");
+  };
+
+  // Remove Model
+  const handleRemoveFromCart = (id) => {
+    const remaining = cart.filter((item) => item.id !== id);
+    setCart(remaining);
+
+    toast.info("Model Removed!");
+  };
 
   return (
     <>
@@ -27,10 +51,10 @@ function App() {
       <div className="flex justify-center gap-3 my-8">
         <button
           onClick={() => setModelCard("Model")}
-          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+          className={`px-6 py-3 rounded-full font-semibold transition ${
             modelCard === "Model"
               ? "bg-orange-500 text-white"
-              : "bg-gray-200 text-black hover:bg-gray-300"
+              : "bg-gray-200"
           }`}
         >
           Model
@@ -38,30 +62,33 @@ function App() {
 
         <button
           onClick={() => setModelCard("Cart")}
-          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+          className={`px-6 py-3 rounded-full font-semibold transition ${
             modelCard === "Cart"
               ? "bg-orange-500 text-white"
-              : "bg-gray-200 text-black hover:bg-gray-300"
+              : "bg-gray-200"
           }`}
         >
-          Cart
+          Cart ({cart.length})
         </button>
       </div>
 
       {modelCard === "Model" ? (
-        <Suspense fallback={<h2 className="text-center">Loading...</h2>}>
-          <Model modelPromise={modelPromise} />
+        <Suspense fallback={<h2>Loading...</h2>}>
+          <Model
+            modelPromise={modelPromise}
+            handleAddToCart={handleAddToCart}
+          />
         </Suspense>
       ) : (
-        <div className="text-center py-20">
-          <h2 className="text-3xl font-bold">Selected Models</h2>
-
-        </div>
+        <Cart
+          cart={cart}
+          handleRemoveFromCart={handleRemoveFromCart}
+        />
       )}
 
       <Footer />
 
-      <ToastContainer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }
