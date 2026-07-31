@@ -20,7 +20,7 @@
 
 ## 🚀 Live Preview
 
-🔗 Live Website: Coming Soon
+🔗 Live Website: https://ai-hub-six-sigma.vercel.app
 
 🔗 GitHub Repository:
 https://github.com/shariful-ire
