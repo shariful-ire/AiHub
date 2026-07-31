@@ -1,54 +1,227 @@
-## 📦 Installation Of React Toastify
----
-## (1st Step)
-bash
-npm install react-toastify
-📝 Step-by-Step Setup
-Step 1: Import in Your File
-jsx
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
----
-## Step 2: Add ToastContainer (Just Once)
-jsx
-function App () {
-  return (
-    <div>
-      <h1>My App</h1>
-      
-      {/* This is the container - add it once in your main file */}
-      <ToastContainer />
-    </div>
-  );
-}
----
-## Step 3: Use toast() Anywhere
-jsx
-function MyComponent() {
-  const handleClick = () => {
-    toast.success('Button clicked! 🎉');
-  };
 
-  return (
-    <button onClick={handleClick}>
-      Click Me
-    </button>
-  );
-}
----
+# 🤖 AI Hub - One Platform For All AI Models
+
+<p align="center">
+  <img src="./src/assets/logo.png" width="120" alt="AI Hub Logo"/>
+</p>
+
+<h3 align="center">
+  Explore, Compare & Subscribe To Powerful AI Models From One Place
+</h3>
+
+<p align="center">
+  AI Hub is a modern AI marketplace platform where users can discover
+  different AI models, explore their features, and manage their selected
+  AI subscriptions easily.
+</p>
 
 
-## 🎨 4 Types of Toast Messages
-jsx
-1. Success (Green)
-toast.success('Successfully done!');
+---
 
-2. Error (Red)
-toast.error('Something went wrong!');
-3. Warning (Yellow)
-toast.warning('Please check again!');
-4. Info (Blue)
-toast.info('New update available!');
-5. Simple (Default)
-toast('Hello there!');
+## 🚀 Live Preview
+
+🔗 Live Website: Coming Soon
+
+🔗 GitHub Repository:
+https://github.com/shariful-ire
+
+
+---
+
+# ✨ Features
+
+## 🤖 AI Model Marketplace
+
+- Browse different AI models in a beautiful card-based interface.
+- View AI model details including:
+  - Model name
+  - Description
+  - Pricing
+  - Availability
+
+
+## 🛒 Smart Selection System
+
+- Users can subscribe to their favorite AI models.
+- Selected models are automatically added to the cart.
+- Prevents duplicate model selection.
+- Users can remove selected models anytime.
+
+
+## 🎨 Modern UI Design
+
+- Responsive design for all devices.
+- Clean AI SaaS inspired interface.
+- Smooth hover effects and animations.
+- Modern gradient based components.
+
+
+## 🔔 User Experience
+
+- Success notification after adding models.
+- Warning notification for duplicate selection.
+- Remove confirmation feedback.
+
+
+---
+
+# 🛠️ Technologies Used
+
+
+## Frontend
+
+| Technology | Purpose |
+|---|---|
+| React.js | Building UI components |
+| Vite | Fast development environment |
+| Tailwind CSS | Styling and responsive design |
+| DaisyUI | UI components |
+| React Toastify | Notifications |
+| React Icons | Icon library |
+
+
+---
+
+# 📂 Project Structure
+
+
+```
+
+AI-Hub
+│
+├── public
+│
+├── src
+│   │
+│   ├── assets
+│   │
+│   ├── components
+│   │   │
+│   │   ├── AiModel
+│   │   │   ├── Model.jsx
+│   │   │   ├── ModelCard.jsx
+│   │   │   └── Cart.jsx
+│   │   │
+│   │   ├── Navbar.jsx
+│   │   ├── Banner.jsx
+│   │   ├── About.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+└── package.json
+
+````
+
+
+---
+
+# ⚙️ Installation & Setup
+
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shariful-ire/AI-Hub.git
+````
+
+Go to project folder:
+
+```bash
+cd AI-Hub
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# 📸 Screenshots
+
+### Home Page
+
+(Add your screenshot here)
+
+### AI Model Section
+
+(Add your screenshot here)
+
+### Selected Model Cart
+
+(Add your screenshot here)
+
+---
+
+# 🧠 How It Works
+
+```
+User
+ |
+ |
+Browse AI Models
+ |
+ |
+Click Subscribe
+ |
+ |
+Model Added To Cart
+ |
+ |
+Manage Selected Models
+```
+
+---
+
+# 🔮 Future Improvements
+
+* 🔐 User authentication system
+* 💳 Payment integration
+* 🤖 AI recommendation system
+* ⭐ User reviews and ratings
+* 📊 User dashboard
+* 🔎 Advanced AI model filtering
+* 🌐 Backend API integration
+
+---
+
+# 👨‍💻 Developer
+
+**Md Shariful Islam**
+
+Frontend Developer
+
+### Connect With Me
+
+📧 Email:
+[shariful.ire@gmail.com](mailto:shariful.ire@gmail.com)
+
+🐙 GitHub:
+[https://github.com/shariful-ire](https://github.com/shariful-ire)
+
+🟢 WhatsApp:
+01826-663235
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+Your support helps me build more open-source projects.
+
+---
+
+<p align="center">
+  Made By Md Shariful Islam.
+</p>
+
