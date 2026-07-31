@@ -51,3 +51,6 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}

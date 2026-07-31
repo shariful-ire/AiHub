@@ -10,6 +10,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Model from "./components/AiModel/Model";
 import Cart from "./components/AiModel/Cart";
+import About from "./components/About";
 
 function App() {
   const getModel = async () => {
@@ -47,8 +48,9 @@ function App() {
     <>
       <NavBar />
       <Banner />
+      <About/>
 
-      <div className="flex justify-center gap-3 my-8">
+      <div className="flex justify-center gap-3 my-8" id ="services">
         <button
           onClick={() => setModelCard("Model")}
           className={`px-6 py-3 rounded-full font-semibold transition ${

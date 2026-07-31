@@ -1,30 +1,72 @@
+import logo from "../assets/logo.png";
+
 const NavBar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar bg-white shadow-sm sticky top-0 z-50 px-5">
+
+      {/* Logo */}
       <div className="navbar-start">
-        <div className="flex items-center gap-1 font-bold text-xl">
-          <img className="w-10" src="./src/assets/logo.png" /> Ai Hub
-        </div>
+        <a
+          href="#home"
+          className="flex items-center gap-2 font-bold text-xl"
+        >
+          <img
+            className="w-10"
+            src={logo}
+            alt="AI Hub Logo"
+          />
+
+          <span>
+            AI Hub
+          </span>
+        </a>
       </div>
+
+
+      {/* Navigation */}
       <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal gap-10 px-1 text-lg">
+        <ul className="menu menu-horizontal gap-8 px-1 text-lg">
+
           <li>
-            <a>Home</a>
+            <a href="#home">
+              Home
+            </a>
           </li>
+
           <li>
-            <a>About</a>
+            <a href="#about">
+              About
+            </a>
           </li>
+
           <li>
-            <a>Services</a>
+            <a href="#services">
+              Services
+            </a>
           </li>
+
           <li>
-            <a>Contact</a>
+            <a href="#contact">
+              Contact
+            </a>
           </li>
+
         </ul>
       </div>
-      <div className="navbar-end gap-5">
-        <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+
+
+      {/* Button */}
+      <div className="navbar-end">
+
+        <a
+          href="#contact"
+          className="btn bg-red-500 hover:bg-red-600 rounded-full text-white border-none"
+        >
+          Get in Touch
+        </a>
+
       </div>
+
     </div>
   );
 };
